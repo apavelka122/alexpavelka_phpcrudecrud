@@ -1,15 +1,37 @@
-# INET4031 PHP Crude CRUD App (MariaDB/MySQL DB Version)
+# INET4031 PHP Crude CRUD App (MariaDB/MySQL Version)
+## Overview
+This project demonstrates a foundational dynamic data-driven web application using PHP and MariaDB/MySQL. While simple in implementation, it serves as an excellent starting point for understanding the principles behind web development with dynamic HTML and backend database interaction.
 
-## Demonstrates a basic Dynamic HTML Application using PHP
+By mastering the mechanics of this app, you’ll gain insights that can be applied to more modern and advanced web development frameworks.
 
-It doesn't get much more crude than this, but is a great starting point for understanding how **dynamic data-driven web applications** work.
+## Features
+Basic CRUD (Create, Read, Update, Delete) functionality for managing data.
+PHP-based dynamic HTML rendering.
+Integration with MariaDB/MySQL for persistent data storage.
+## Prerequisites
+A MySQL/MariaDB database setup with a preconfigured employees database and user accounts.
+Basic knowledge of PHP and SQL.
+A web server configured to execute PHP scripts (e.g., Apache with PHP module or XAMPP).
+## Setup
+Database Configuration:
+Ensure your MySQL/MariaDB database has the required schema and user accounts. Details about setting up the database will be provided during class sessions.
 
-Understand how this one works, and more modern/advanced/complex web development frameworks, won't seem so mysterious.
+Modify credentials.php:
+Update the credentials.php file with the appropriate database connection parameters (e.g., host, username, password, and database name).
+Important: Replace the default credentials with your own secure values.
 
-This application assumes the MySQL database has certain users added and an "employees" database based on a sample dataset. Additional details will be provided in class.
+Deploy Files:
+Place all files in a directory accessible by your web server (e.g., under htdocs for XAMPP or /var/www/html for Apache).
 
-The "credentials.php" file above has the details of the MySQL database connection.  You will need to modify this file to work for your configuration
+Access the Application:
+Navigate to the appropriate URL in your web browser to interact with the app (e.g., http://localhost/inet4031-crud-app/).
 
-Obviously everything is in the open and unsecure here.
+## Security Notice
+This app is intended for learning purposes and is not secure for production use.
 
-...and obviously change the credentials too...
+Sensitive Information: Database credentials are stored in plain text and should be updated before deployment.
+Lack of Security Measures: There are no protections against SQL injection, XSS, or other vulnerabilities.
+For production applications, ensure secure practices such as input sanitization, prepared statements, and the use of environment variables for sensitive credentials.
+
+## License
+This project is provided for educational purposes as part of the INET4031 course curriculum.
